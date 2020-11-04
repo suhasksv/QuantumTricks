@@ -3,12 +3,12 @@
 You can also comment in Github wiki
 
 # Hi all, I am Suhas..!
-View -
+Source Code -
 - [GitHub](https://github.com/suhasksv)
 - [GitLab](https://gitlab.com/suhasksv)
 - [Atlassian BitBucket](https://bithucket.org/suhasksv)
 
-## Code for Calculator.py written in Python
+## Code for Calculator written in Python
 ```
 import time
 
@@ -118,6 +118,7 @@ while True:
 
 
 ```
+[Source Code on GitHub](https://github.com/suhasksv/py-ground/blob/master/CodeCrakers/calculator.py)
 
 Thanks!!
-Hosted by GitHub Pages, maintained by suhasksv
+Quantum Tricks
