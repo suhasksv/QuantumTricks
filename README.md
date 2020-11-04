@@ -1,37 +1,123 @@
-## Welcome to GitHub Pages
+## Welcome to Quantum Tricks
 
-You can use the [editor on GitHub](https://github.com/suhasksv/quantum/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+You can also comment in Github wiki
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Hi all, I am Suhas..!
+View -
+- [GitHub](https://github.com/suhasksv)
+- [GitLab](https://gitlab.com/suhasksv)
+- [Atlassian BitBucket](https://bithucket.org/suhasksv)
 
-### Markdown
+## Code for Calculator.py written in Python
+```
+import time
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+print("Hi, Welcome to Quantum Tricks")
+time.sleep(2.0)
 
-```markdown
-Syntax highlighted code block
+print("This is a Infinity Python Calculator")
+time.sleep(1.0)
 
-# Header 1
-## Header 2
-### Header 3
+print("Let's start calculating")
+time.sleep(1.0)
 
-- Bulleted
-- List
+try:
+    num1 = float(input("Enter an integer:"))
+except:
+    print("Invalid Input. Plz try again")
+    exit(1)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+# Calculating addition
+def add(a, b):
+    return a + b
 
-[Link](url) and ![Image](src)
+
+# Calculating subtraction
+def sub(a, b):
+    return a - b
+
+
+# Calculating multiplication
+def mul(a, b):
+    return a * b
+
+
+# Calculating division
+def div(a, b):
+    return a / b
+
+
+# Calculating exponent
+def power(a, b):
+    return a ** b
+
+
+# Calculating mod
+def mod(a, b):
+    return a % b
+
+
+# Calculating xor or exclusive or
+def xor(a, b):
+    return a ^ b
+
+
+# Calculating or
+def of(a, b):
+    return a or b
+
+
+# Calculating and
+def anda(a, b):
+    return a and b
+
+
+# Calculating Bit wise and
+def bitand(a, b):
+    return a & b
+
+
+# Calculating Bit wise or
+def bitor(a, b):
+    return a | b
+
+
+# Defining a Dictionary of Operations
+ops = {"+": add, "add": add, "addition": add, "sum": add, "-": sub, "sub": sub, "subtraction": sub,
+       "difference": sub,
+       "x": mul,
+       "multiply": mul, "*": mul, "multiplication": mul, "div": div, "division": div, "/": div, "power": power,
+       "^": power,
+       "**": power, "mod": mod, "%": mod, "||": mod, "| |": mod, "xor": xor, "^or": xor, "exclusive_or": xor,
+       "or": of,
+       "and": anda, "bitand": bitand,
+       "&": bitand, "bitor": bitor, "bitwiseor": bitor, "bit-wise-or": bitor}
+
+# Main loop of calculation
+while True:
+    op = input("Enter operation:")  # Takes input from the costumer and stores in variable op
+
+    if op.lower() in ops:
+        try:
+            num2 = float(input("Enter an integer:"))
+            answer = eval("ops[op](num1, num2)")
+            # eval is function in python that evaluates the value of the given operation(op)
+            print(answer)
+            num1 = answer
+        except:
+            print("Invalid Input. Please try again by entering a number")
+    elif op.lower() == "end" or op.lower() == "finish" or op.lower() == "break connection" or op.lower() == "break":
+        print("")
+        print("This is your final result:", answer)
+        print("Thanks for Choosing Quantum Tricks Infinity Python Calculator")
+        break
+    else:
+        print("Sorry Operation does not exist. Please try another operation.")
+        print("")
+
+
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/suhasksv/quantum/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Thanks!!
+Hosted by GitHub Pages, maintained by suhasksv
